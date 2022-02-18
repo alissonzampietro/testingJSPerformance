@@ -5,10 +5,10 @@ function testLoop(func) {
 }
 // testing using mod
 console.time('mod')
-function isOddNative(number) {
+function isOddMod(number) {
     return number % 2 !== 0; 
 }
-testLoop(isOddNative)
+testLoop(isOddMod)
 console.timeEnd('mod')
 
 
