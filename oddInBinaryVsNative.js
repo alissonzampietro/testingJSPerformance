@@ -3,14 +3,16 @@ function testLoop(func) {
         func(i)
     }
 }
-
-console.time('native')
+// testing using mod
+console.time('mod')
 function isOddNative(number) {
     return number % 2 !== 0; 
 }
 testLoop(isOddNative)
-console.timeEnd('native')
+console.timeEnd('mod')
 
+
+// testing using binary
 console.time('binary')
 function isOddBinary(number) {
     let converted = (number).toString(2);
