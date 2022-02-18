@@ -1,5 +1,6 @@
+const interactions = 2;
 function testLoop(func) {
-    for(let i = 0; i < 3000000; i++) {
+    for(let i = 0; i < interactions; i++) {
         func(i)
     }
 }
@@ -20,3 +21,4 @@ function isOddBinary(number) {
 }
 testLoop(isOddBinary)
 console.timeEnd('binary')
+console.log('interactions: ', interactions)
